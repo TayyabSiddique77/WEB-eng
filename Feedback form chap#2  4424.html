@@ -1,0 +1,119 @@
+<html>
+6 <head>
+7 <meta charset = "utf-8">
+8 <title>More Forms</title>
+9 </head>
+62 Chapter 2 Introduction to HTML5: Part 1
+11 <body>
+12 <h1>Feedback Form</h1>
+13 <p>Please fill out this form to help
+14 us improve our site.</p>
+15
+16 <form method = "post" action = "http://www.deitel.com">
+17
+18 <input type = "hidden" name = "recipient"
+19 value = "deitel@deitel.com">
+20 <input type = "hidden" name = "subject"
+21 value = "Feedback Form">
+22 <input type = "hidden" name = "redirect"
+23 value = "main.html">
+24
+25 <p><label>Name:
+26 <input name = "name" type = "text" size = "25">
+27 </label></p>
+28
+29 <!-- <textarea> creates a multiline textbox -->
+30 <p><label>Comments:
+31
+32
+33 </label></p>
+34
+35 <!-- <input type = "password"> inserts a -->
+36 <!-- textbox whose display is masked with -->
+37 <!-- asterisk characters -->
+38 <p><label>E-mail Address:
+39
+40 </label></p>
+41
+42 <p>
+43 <strong>Things you liked:</strong><br>
+
+60 </p>
+61
+62 <!-- <input type = "radio"> creates a radio -->
+63 <!-- button. The difference between radio buttons -->
+Fig. 2.15 | Form using a variety of components. (Part 2 of 4.)
+<br>
+<textarea name = "comments"
+rows = "4" cols = "36">Enter comments here.</textarea>
+<input name = "email" type = "password" size = "25">
+<label>Site design
+<input name = "thingsliked" type = "checkbox"
+value = "Design"></label>
+<label>Links
+<input name = "thingsliked" type = "checkbox"
+value = "Links"></label>
+<label>Ease of use
+<input name = "thingsliked" type = "checkbox"
+value = "Ease"></label>
+<label>Images
+<input name = "thingsliked" type = "checkbox"
+value = "Images"></label>
+<label>Source code
+<input name = "thingsliked" type = "checkbox"
+value = "Code"></label>
+2.11 Forms 63
+64 <!-- and checkboxes is that only one radio button -->
+65 <!-- in a group can be selected. -->
+66 <p>
+67 <strong>How did you get to our site?:</strong><br>
+68
+69 <label>Search engine
+70
+71
+72 <label>Links from another site
+73 <input name = "howtosite" type = "radio"
+74 value = "link"></label>
+75 <label>Deitel.com Web site
+76 <input name = "howtosite" type = "radio"
+77 value = "deitel.com"></label>
+78 <label>Reference in a book
+79 <input name = "howtosite" type = "radio"
+80 value = "book"></label>
+ <label>Other
+ <input name = "howtosite" type = "radio"
+ value = "other"></label>
+ </p>
+
+ <p>
+<label>Rate our site:
+>
+
+
+ </label>
+ </p>
+
+ <p>
+<input type = "submit" value = "Submit">
+<input type = "reset" value = "Clear">
+ </p>
+ </form>
+ </body>
+ </html>
+)
+<input name = "howtosite" type = "radio"
+value = "search engine" checked></label>
+<select name = "rating">
+<option selected>Amazing</option>
+<option>10</option>
+<option>9</option>
+<option>8</option>
+<option>7</option>
+<option>6</option>
+<option>5</option>
+<option>4</option>
+<option>3</option>
+<option>2</option>
+<option>1</option>
+<option>Awful</option>
+</select>
